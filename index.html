@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Day Planner</title>
+    
+</head>
+
+
+ 
+      <body>
+        <header class="jumbotron" style="background-color: black;">
+          <h1 style="text-align: center; color: white;" class="header" >Day Planner</h1>
+          
+          
+          <div id="currenDate" style="color: white; font-size: 50px;" class="lead"></div>
+        </header>
+      
+        <div class="container">
+          <table  class="time-table">
+            <table>
+              <tr>
+                <td id="hour">9am </td>
+                <td>
+                  <textarea style="margin-right: auto; margin-left: auto;" id="content-input1"></textarea>
+                </td>
+                <td>
+                  <button class="svBtn">Save</button>
+                </td>
+              </tr>
+              <tr>
+                <td id="hour">10am </td>
+                <td>
+                  <textarea id="content-input2"></textarea>
+                </td>
+                <td>
+                  <button class="svBtn">Save</button>
+                </td>
+              </tr>
+              <tr>
+                <td id="hour">11am </td>
+                <td>
+                  <textarea id="content-input3"></textarea>
+                </td>
+                <td>
+                  <button class="svBtn">Save</button>
+                </td>
+              </tr>
+              <tr>
+                <td id="hour">12pm </td>
+                <td>
+                  <textarea id="content-input4"></textarea>
+                </td>
+                <td>
+                  <button class="svBtn">Save</button>
+                </td>
+              </tr>
+              <tr>
+                <td id="hour">1pm </td>
+                <td>
+                  <textarea id="content-input5"></textarea>
+                </td>
+                <td>
+                  <button class="svBtn">Save</button>
+                </td>
+              </tr>
+              <tr>
+                <td id="hour">2pm </td>
+                <td>
+                  <textarea id="content-input6"></textarea>
+                </td>
+                <td>
+                  <button class="svBtn">Save</button>
+                </td>
+              </tr>
+              <tr>
+                <td id="hour">3pm </td>
+                <td>
+                  <textarea id="content-input7"></textarea>
+                </td>
+                <td>
+                  <button class="svBtn">Save</button>
+                </td>
+              </tr>
+              <tr>
+                <td id="hour">4pm </td>
+                <td>
+                  <textarea id="content-input8"></textarea>
+                </td>
+                <td>
+                  <button class="svBtn">Save</button>
+                </td>
+              </tr>
+              <tr>
+                <td id="hour">5pm </td>
+                <td>
+                  <textarea id="content-input9"></textarea>
+                </td>
+                <td>
+                  <button class="svBtn">Save</button>
+                </td>
+              </tr>
+      
+      
+            </table>
+          </table>
+        </div>
+        
+        
+        <script  type="text/javascript">
+
+  var today = new Date();
+  var day = today.getDay();
+  var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  var dateTime = date+' '+time;
+   
+  document.getElementById("currenDate").innerHTML =  ' <br> Day : ' + daylist[day];
+    
+        </script>
+
+      <script src="script.js"></script>
+   
+  
+
+
+
+
+
+</body>
+</html>
