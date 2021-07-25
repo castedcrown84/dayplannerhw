@@ -118,9 +118,9 @@
   var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
   var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
   var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-  var dateTime = date+' '+time;
+  var dateTime = date+' '+date;
    
-  document.getElementById("currenDate").innerHTML =  ' <br> Day : ' + daylist[day];
+  document.getElementById("currenDate").innerHTML =  date + ' <br> Day : ' + daylist[day];
     
         </script>
 
