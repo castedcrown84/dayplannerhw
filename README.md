@@ -11,7 +11,7 @@
 * <a href="#technologies">Technologies</a>
 
 ## Link
-<b>Link to site:</b> 
+<b>Link to site:</b> https://castedcrown84.github.io/dayplannerhw/
 
 ## About 
 <i><b>Day Planner</b></i> is a calendar application that allows a user to save events for each hour of the day. This will help the user stay more organized for their work day. This app runs in the browser and feature dynamically updated HTML and CSS powered by jQuery.
